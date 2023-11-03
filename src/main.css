@@ -28,16 +28,19 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 	cursor: initial;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
 	background: var(--light);
 	color: var(--dark);
 }
 
 section {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	padding-left: 1.5rem;
-	padding-right: 1.5em;
+  margin: 0;
+  padding: 1rem;
 }
 
 h3 {
@@ -160,7 +163,6 @@ input:checked ~ .bubble::after {
 	color: #FFF;
 	background-color: var(--primary);
 	border-radius: 0.5rem;
-	box-shadow: var(--personal-glow);
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
 }
